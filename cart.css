@@ -1,0 +1,233 @@
+/* Body & Container CSS begin */
+body {
+  background-color: #f3f3f3;
+}
+.container {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  /* border: 1px solid black; */
+  height: auto;
+  margin-bottom: 200px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container > div > h3 {
+  color: #5d656d;
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-left: 40px;
+  line-height: 20px;
+}
+/* Body & containe CSS End  */
+/* Table CSS Begin */
+table {
+  font-family: "Roboto Slab", serif;
+  width: 93%;
+  font-size: 12px;
+  margin: auto;
+  font-weight: 200;
+  border-left: 2px solid #c6cc74;
+  margin-bottom: 30px;
+}
+thead {
+  background-color: #555555;
+  color: white;
+  padding: 3px;
+}
+#th1 {
+  padding: 10px 200px 10px 10px;
+}
+#th2,
+#th3,
+#th4,
+#th5 {
+  padding: 10px;
+}
+#th5 {
+  background-color: #c6cc74;
+  color: black;
+}
+tbody {
+  background-color: #f6f6f6;
+}
+td {
+  text-align: center;
+  padding-left: 3px;
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-left: 2px solid #c6cc74;
+}
+.td1 {
+  display: inline-block;
+  margin-left: 50px;
+}
+/* Table CSS END */
+/* Subtotal 3 Divs Starts */
+#checkOutDiv {
+  width: 100%;
+  /* border: 1px solid blue; */
+  height: 300px;
+  display: flex;
+}
+#emptyBtnDiv {
+  width: 30%;
+  /* border: 1px solid teal; */
+  height: 100%;
+  margin-left: 15px;
+}
+#emptyBtnDiv > div {
+  margin-bottom: 200px;
+  margin-top: 20px;
+}
+#emptyBtnDiv > div > button {
+  background-color: #f0f2f0;
+  width: 150px;
+  height: 30px;
+  border: 1px solid #84c225;
+  border-radius: 5px;
+  color: #555555;
+  font-family: "Lato", serif;
+  font-size: 12px;
+  font-weight: 600;
+  /* box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px; */
+  /* margin-bottom: 200px; */
+}
+#continueShopBtn {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#offerDiv {
+  width: 20%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+#offerDiv > div {
+  width: 55%;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  font-family: "Lato", serif;
+  font-size: 14px;
+  color: green;
+  border: 1px solid #84c225;
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+/* SubTotal Section Starts */
+#totalDiv {
+  /* total is one big DIV */
+  width: 50%;
+  height: 90%;
+  border-radius: 10px;
+  margin-right: 20px;
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#totalDiv > div {
+  width: 95%;
+  height: 95%;
+  /* border: 1px solid black; */
+  margin: auto;
+  border-radius: 10px;
+  /* display: flex; */
+}
+#subTotalDiv {
+  width: 80%;
+  height: auto;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-left: 10px;
+}
+#subTotalDiv > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px;
+  color: #555555;
+  font-size: 12px;
+  /* border: 1px solid black; */
+  line-height: 0%;
+  font-weight: bold;
+  font-family: "Lato", serif;
+}
+#subTotalDiv > div h1 {
+  font-size: 24px;
+}
+#piggySub {
+  /* border: 1px solid red; */
+  width: 94%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#piggyIconDiv {
+  width: 15%;
+  margin-left: 25px;
+  /* border: 2px solid blue; */
+  color: red;
+  font-family: "Roboto Slab", serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+/* Piggy Icon */
+#piggy {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+/* CheckOut Btn DIV */
+#checkOutBtnDiv {
+  width: 95%;
+  /* border: 2px solid blue; */
+  height: 130px;
+  line-height: 0px;
+  color: #555555;
+  font-family: "Lato", serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+/* CheckOut Button */
+#checkoutBtn {
+  width: 200px;
+  height: 50px;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  margin-left: 250px;
+  border-radius: 10px;
+  border: 1px solid #f8d979;
+  background-color: #f8d979;
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#similarProDiv > div > h2 {
+  font-family: "Roboto Slab", serif;
+  color: #555555;
+  font-weight: 300;
+  line-height: 0px;
+  margin-left: 20px;
+}
+#footer {
+  width: 95%;
+  margin: auto;
+  /* border: 1px solid red; */
+  height: 400px;
+  display: flex;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+}
+#footer > div {
+  width: 25%;
+  height: 100%;
+  /* border: 1px solid green; */
+}
+
+#footer > div > h3 {
+  color: #84c225;
+  font-weight: bold;
+}
