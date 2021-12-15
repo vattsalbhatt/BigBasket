@@ -1,0 +1,390 @@
+body {
+  background-color: #f3f3f3;
+}
+.container {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  /* border: 1px solid black; */
+  height: auto;
+  margin-bottom: 200px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#topCat {
+  margin-top: 35px;
+  width: 90%;
+  margin-left: 20px;
+  /* border: 1px solid blue; */
+  /* height: 50px; */
+  display: grid;
+  grid-template-columns: repeat(6, 18%);
+  justify-content: space-between;
+}
+#topCat > a > img {
+  height: 100%;
+  width: 90%;
+}
+#mySmartBasket {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  display: grid;
+  /* border: 1px solid red; */
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 70% 30%;
+  text-align: center;
+  grid-template-areas:
+    "a a a a b"
+    "c c c c c";
+}
+
+#myA {
+  grid-area: a;
+  /* border: 1px solid blue; */
+}
+#myB {
+  grid-area: b;
+  /* border: 1px solid red; */
+}
+#myC {
+  grid-area: c;
+  /* border: 1px solid green; */
+}
+#myA > p {
+  /* border: 1px solid black; */
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Roboto Slab", serif;
+  color: #555555;
+  margin-left: 200px;
+  font-weight: 600;
+  display: block;
+}
+#myB > button {
+  background-color: #84c225;
+  border: 1px solid #84c225;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  margin-top: 7px;
+  color: #f3f3f3;
+}
+#banner1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+}
+#banner1 > a > img {
+  width: 100%;
+  /* margin-left: 5px; */
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+#bankHeader {
+  margin-top: 20px;
+  width: 100%;
+  /* height: 30%; */
+  display: grid;
+  /* border: 1px solid red; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 70% 30%;
+  text-align: center;
+  grid-template-areas:
+    "a a a"
+    "b b b";
+}
+#myD {
+  grid-area: a;
+  /* border: 1px solid red; */
+}
+#myD > p {
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Roboto Slab", serif;
+  color: #555555;
+  /* margin-left: 200px; */
+  font-weight: 600;
+  display: block;
+}
+#myE {
+  grid-area: b;
+  /* line-height: 0px; */
+  /* border: 1px solid red; */
+  /* margin-bottom: 20px; */
+}
+#bankImages {
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  /* border: 1px solid black; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 30px;
+}
+#bankImages > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#topImages {
+  margin: auto;
+  margin-top: 10px;
+  width: 99%;
+  display: grid;
+  /* border: 1px solid black;    */
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 30px;
+}
+#topImages > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px solid rgb(202, 194, 194);
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#fruitImages {
+  margin: auto;
+  margin-top: 10px;
+  width: 99%;
+  display: grid;
+  /* border: 1px solid black;    */
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: 180px 180px; */
+  grid-gap: 10px;
+  margin-bottom: 30px;
+  grid-template-areas:
+    "a a b c"
+    "a a d e";
+}
+#c1 {
+  grid-area: a;
+}
+#c2 {
+  grid-area: b;
+}
+#c3 {
+  grid-area: c;
+}
+#c4 {
+  grid-area: d;
+}
+#c5 {
+  grid-area: e;
+}
+#fruitImages > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px solid rgb(202, 194, 194);
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#dailyStaple {
+  margin: auto;
+  margin-top: 10px;
+  width: 99%;
+  display: grid;
+  /* border: 1px solid black;    */
+  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-rows: 180px 180px; */
+  grid-gap: 10px;
+  margin-bottom: 40px;
+}
+#dailyStaple > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px solid rgb(202, 194, 194);
+  border-radius: 5px;
+}
+#dailyStaple > div > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#footer {
+  width: 95%;
+  margin: auto;
+  /* border: 1px solid red; */
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "a b c d"
+    "a b c d"
+    "a b c d"
+    "a b c d";
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+}
+#footer > div {
+  /* width: 25%; */
+  height: 100%;
+  /* border: 1px solid green; */
+}
+
+#footer > div > h3 {
+  color: #84c225;
+  font-weight: bold;
+}
+#footer1 {
+  grid-area: a;
+}
+#footer2 {
+  grid-area: b;
+}
+#footer3 {
+  grid-area: c;
+}
+#footer4 {
+  grid-area: d;
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 100%;
+  }
+  #topCat {
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 1fr 1fr;
+    /* justify-content: space-between; */
+  }
+  /* My Smart Basket */
+  #mySmartBasket {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 70% 30%;
+    text-align: center;
+    grid-template-areas:
+      "a a a a a"
+      "c c c c c";
+  }
+  #myA > p {
+    /* border: 1px solid black; */
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    color: #555555;
+    margin-bottom: 0%;
+    /* margin-left: 200px; */
+    font-weight: 600;
+    display: block;
+  }
+  #myB {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #myB > button {
+    /* width: 100%;
+    height: 25px;
+    border-radius: 5px; */
+    display: none;
+  }
+
+  #myD {
+    grid-area: a;
+    /* border: 1px solid red; */
+  }
+  #myD > p {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    color: #555555;
+    /* margin-left: 200px; */
+    font-weight: 600;
+    display: block;
+  }
+  #myE {
+    grid-area: b;
+    /* line-height: 0px; */
+    /* border: 1px solid red; */
+    /* margin-bottom: 20px; */
+  }
+  #bankImages {
+    margin: auto;
+    width: 80%;
+    /* border: 1px solid black; */
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 46% 46%;
+    grid-gap: 10px;
+  }
+  #bankImages > img {
+    margin-top: 50px;
+  }
+  #topImages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #fruitImages {
+    grid-template-areas:
+      "a a a a"
+      "b b c c"
+      "d d e e";
+  }
+  #dailyStaple {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #footer {
+    width: 95%;
+    margin: auto;
+    /* border: 1px solid red; */
+    /* height: 400px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "a a a a"
+      "b b b b"
+      "c c d d"
+      ". . . .";
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  #footer > div {
+    /* width: 25%; */
+    height: 100%;
+    /* border: 1px solid green; */
+  }
+
+  #footer3 > img {
+    height: 25%;
+    /* width: 100%; */
+    /* border: 1px solid red; */
+  }
+  #footer > div > p {
+    display: inline;
+    margin-right: 10px;
+  }
+  #footer4 > div > img {
+    height: 100;
+  }
+}
+
+/* @media only screen and (min-width: 0px) and (max-width: 375px) {
+  .container {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    border: 1px solid black;
+    height: auto;
+    margin-bottom: 200px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  } */
+/* #topCat {
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+  }
+}  */

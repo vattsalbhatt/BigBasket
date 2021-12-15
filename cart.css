@@ -217,12 +217,19 @@ td {
   margin: auto;
   /* border: 1px solid red; */
   height: 400px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "a b c d"
+    "a b c d"
+    "a b c d"
+    "a b c d";
   font-family: "Roboto Slab", serif;
   font-size: 14px;
 }
 #footer > div {
-  width: 25%;
+  /* width: 25%; */
   height: 100%;
   /* border: 1px solid green; */
 }
@@ -230,4 +237,16 @@ td {
 #footer > div > h3 {
   color: #84c225;
   font-weight: bold;
+}
+#footer1 {
+  grid-area: a;
+}
+#footer2 {
+  grid-area: b;
+}
+#footer3 {
+  grid-area: c;
+}
+#footer4 {
+  grid-area: d;
 }
