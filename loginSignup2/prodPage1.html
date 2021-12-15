@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 280px;
+        height: 440px;
+        /* border: 1px solid rgb(141, 141, 143); */
+        margin: auto;
+      }
+      /* center part */
+      /* R is Return policy
+      Q is Quality */
+      .Qbox {
+        margin-top: 115px;
+        margin-left: 50px;
+        display: flex;
+        border-bottom: 1px dashed rgb(145, 142, 142);
+
+        color: grey;
+        padding-bottom: 8px;
+        margin-right: 70px;
+      }
+      .Rbox {
+        margin-left: 50px;
+        display: flex;
+        border-bottom: 1px dashed rgb(145, 142, 142);
+        color: grey;
+        padding-top: 10px;
+        margin-right: 70px;
+      }
+      .iconQ > img {
+        height: 100%;
+        width: 100%;
+        color: grey;
+      }
+      .iconQ {
+        height: 25px;
+        width: 25px;
+        color: grey;
+        margin-right: 15px;
+      }
+      .iconQ > img {
+        height: 100%;
+        width: 100%;
+        color: grey;
+      }
+      .iconR {
+        height: 25px;
+        width: 25px;
+        color: grey;
+        margin-right: 15px;
+      }
+      .iconR > img {
+        height: 100%;
+        width: 100%;
+        color: grey;
+      }
+
+      /* lower part  */
+      .quote {
+        margin-top: 90px;
+        margin-left: 3px;
+        color: rgb(105, 100, 100);
+        font-weight: lighter;
+      }
+      .appStore {
+        display: flex;
+      }
+      .google {
+        height: 40px;
+        width: 130px;
+        border: 1px solid rgb(145, 142, 142);
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+      }
+      .app {
+        height: 40px;
+        width: 130px;
+        border: 1px solid rgb(145, 142, 142);
+        /* border: 1px solid tomato; */
+        display: flex;
+        margin-top: 15px;
+      }
+      .googleIcon {
+        height: 30px;
+        width: 30px;
+        display: flex;
+      }
+      .googleIcon > img {
+        width: 100%;
+        height: 100%;
+        /* padding: 1px; */
+      }
+      .googletext {
+        /* border: 1px solid rgb(20, 255, 126); */
+        margin-left: 5px;
+        color: grey;
+        text-align: center;
+        height: fit-content;
+      }
+      .appIcon {
+        height: 25px;
+        width: 25px;
+        display: flex;
+        /* border: 1px solid violet; */
+
+        padding: 5px;
+        margin-left: 5px;
+      }
+      .appIcon > img {
+        width: 100%;
+        height: 100%;
+      }
+      .apptext {
+        /* border: 1px solid rgb(20, 255, 126); */
+        /* margin-left: 2px; */
+        color: grey;
+        height: fit-content;
+        text-align: center;
+        margin-top: 10px;
+      }
+      hr {
+        font-weight: lighter;
+        width: 80%;
+        margin-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="Qbox">
+        <div class="iconQ">
+          <img src="https://cdn-icons-png.flaticon.com/128/4497/4497523.png" />
+        </div>
+        <div class="textQ" style="color: rgb(145, 137, 137)">
+          <div style="font-weight: lighter">Quality</div>
+          <p style="margin-top: 5px">You can trust</p>
+        </div>
+      </div>
+
+      <div class="Rbox">
+        <div class="iconR">
+          <img src="https://cdn-icons-png.flaticon.com/128/645/645084.png" />
+        </div>
+        <div class="textR">
+          <div style="font-weight: lighter" ;>Return policy</div>
+          <p style="margin-top: 5px">No questions asked</p>
+        </div>
+      </div>
+
+      <hr />
+      <div class="quote">Shopping at fingertips!!Download our app</div>
+      <div class="appStore">
+        <div class="google">
+          <div class="googleIcon">
+            <img
+              src="https://cdn-icons.flaticon.com/png/128/3128/premium/3128279.png?token=exp=1639485197~hmac=aa41bc88eaebcd85f21c23e52a74f17b"
+            />
+          </div>
+          <div class="googletext">Google Play</div>
+        </div>
+        <div class="app">
+          <div class="appIcon">
+            <img src=" https://cdn-icons-png.flaticon.com/128/731/731985.png" />
+          </div>
+          <div class="apptext">App Store</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
