@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 400px;
+            border: 1px solid black;
+        }
+
+        #header{
+            width:100%;
+            height: 100px;
+            border: 1px solid red;
+            margin-bottom:20px;
+        }
+
+        #A1{
+            border: 1px solid red;
+        }
+
+        #A2{
+            border: 1px solid red;
+            text-align: center;
+        }
+
+        #A3{
+            border: 1px solid red;
+        }
+        #B2{
+            display:flex;
+            width:100%;
+            text-align: center;
+            margin-top: 70px;
+            /* padding-left: 10px; */
+            /* border: 1px solid black; */
+           
+
+        }
+        .images{
+            margin:auto;
+            width:60px;
+            height: 60px;
+            border: 1px solid;
+            padding-left: 5pxpx;
+        }
+        #A3{
+          padding:10px;
+          line-height:30px;
+          
+        }
+        #price{
+            display:flex;
+            /* padding-left: 10px; */
+            justify-content: space-between;
+           
+        }
+        #quantity{
+            width: 30px;
+            height:40px;
+            border-radius: 2px;
+        }
+        #buttons{
+            display: flex;
+            padding: 10px;
+        }
+        #time{
+            display:flex;
+            /* padding-left:10px; */
+        }
+        .small{
+            color: gray;
+            font-size:12px
+        }
+        .discount{
+            color:brown ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="container">
+        <div id="A1">category</div>
+        <div id="A2">
+            <div id="B1">
+                <img src="https://www.bigbasket.com/media/uploads/p/l/10000201_15-fresho-tomato-hybrid.jpg" alt="" height="250px" width="80%">
+            </div>
+            <div id="B2">
+             <img class="images" src="https://www.bigbasket.com/media/uploads/p/l/10000201_15-fresho-tomato-hybrid.jpg" alt="">
+             <img class="images" src="https://www.bigbasket.com/media/uploads/p/l/10000201-2_2-fresho-tomato-hybrid.jpg" alt="">
+             <img class="images" src="https://www.bigbasket.com/media/uploads/p/l/10000201-3_3-fresho-tomato-hybrid.jpg" alt="">
+             <img class="images" src="https://www.bigbasket.com/media/uploads/p/l/10000201-4_2-fresho-tomato-hybrid.jpg" alt="">
+             <img class="images" src="https://www.bigbasket.com/media/uploads/p/l/10000201-5_1-fresho-tomato-hybrid.jpg" alt="">
+            </div>
+        </div>
+        <div id="A3">
+            <div >
+                <div>Fresho</div>
+               <div>Fresho Tomato - Hybrid,500 g</div> 
+            </div>
+           
+            <div id="price">
+            <div class="small">MRP:<span style="text-decoration:line-through">Rs 53.30</span></div>
+            <div>Price:Rs 32.83</div>
+            <div><span  class="discount">You Save:38%</span><span class="small">(inclusive of all taxes)</span></div>
+            </div>
+            <div id="buttons">
+                <input type="number" value="" id="quantity">
+                <BUtton>ADD TO BASKET</BUtton>
+                <BUtton>SAVE</BUtton>
+            </div>
+            <div id="time">
+             <div><img src="https://as2.ftcdn.net/v2/jpg/04/29/77/43/1000_F_429774398_0O6fbBXVI0mDCxxSabPgdfpWGWVkKAEA.jpg" alt="" height="20px" width="20px"></div>
+             <div><span class="small"> Today1:30PM - 3:30PM</span></div>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+</html>
