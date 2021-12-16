@@ -8,7 +8,7 @@
     <style>
         #container{
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3,2fr);
             grid-template-rows: 400px;
             border: 1px solid black;
         }
@@ -21,16 +21,16 @@
         }
 
         #A1{
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
 
         #A2{
-            border: 1px solid red;
+            /* border: 1px solid red; */
             text-align: center;
         }
 
         #A3{
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         #B2{
             display:flex;
@@ -56,22 +56,25 @@
         }
         #price{
             display:flex;
-            /* padding-left: 10px; */
-            justify-content: space-between;
+            padding-left: 10px;
+            justify-content:left,space-between;
+            
            
         }
         #quantity{
-            width: 30px;
+            width: 40px;
             height:40px;
-            border-radius: 2px;
+            border-radius: 5px;
+            border: 1px solid gray;
         }
         #buttons{
             display: flex;
             padding: 10px;
+            margin-top: none;
         }
         #time{
             display:flex;
-            /* padding-left:10px; */
+            padding-left:10px;
         }
         .small{
             color: gray;
@@ -79,6 +82,26 @@
         }
         .discount{
             color:brown ;
+            font-size:15px;
+        }
+        #add{
+            margin-left:5px;
+            width:170px;
+            background-color:#84c225;
+            border-radius: 5px;
+            border:none;
+            color: aliceblue;
+            font-weight:bold;
+        }
+        #save{
+            margin-left: 10px;
+            width:100px;
+            /* background-color:#84c225; */
+            border-radius: 5px;
+            border:1px solid gray;
+            color: gray;
+            font-weight:lighter;
+
         }
 
 
@@ -102,8 +125,8 @@
         </div>
         <div id="A3">
             <div >
-                <div>Fresho</div>
-               <div>Fresho Tomato - Hybrid,500 g</div> 
+               <div  style="color:gray;font-size: 15px;font-style:underline;"><p>Fresho</p></div>
+               <div  style="color:black;font-size: 20px;font-weight:lighter">Fresho Tomato - Hybrid, 500 g</div> 
             </div>
            
             <div id="price">
@@ -113,11 +136,11 @@
             </div>
             <div id="buttons">
                 <input type="number" value="" id="quantity">
-                <BUtton>ADD TO BASKET</BUtton>
-                <BUtton>SAVE</BUtton>
+                <BUtton id="add">ADD TO BASKET</BUtton>
+                <BUtton id="save">SAVE</BUtton>
             </div>
             <div id="time">
-             <div><img src="https://as2.ftcdn.net/v2/jpg/04/29/77/43/1000_F_429774398_0O6fbBXVI0mDCxxSabPgdfpWGWVkKAEA.jpg" alt="" height="20px" width="20px"></div>
+             <div><img style="margin-top: 5px;margin-right:5px" src="https://as2.ftcdn.net/v2/jpg/04/29/77/43/1000_F_429774398_0O6fbBXVI0mDCxxSabPgdfpWGWVkKAEA.jpg" alt="" height="20px" width="20px"></div>
              <div><span class="small"> Today1:30PM - 3:30PM</span></div>
             </div>
             
