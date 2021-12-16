@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Lato Fonts impoting -->
     <!-- Roboto Slab Importing -->
@@ -74,25 +74,28 @@
            font-size: 15px;
        }
 
-       p{
-           font-size: 11px;
-           position:relative;
-           font-weight: lighter;
-           color: #333333;
-           font-family:sans-serif ;
-           line-height: 15px;
-        
-       }
-       a{
-           color:royalblue;
-           font-weight: bold;
-           text-decoration: none;
-       }
-       
+      p {
+        font-size: 11px;
+        position: relative;
+        font-weight: lighter;
+        color: #333333;
+        font-family: sans-serif;
+        line-height: 15px;
+      }
+      a {
+        color: royalblue;
+        font-weight: bold;
+        text-decoration: none;
+      }
 
-   </style>
-</head>
-<body>
+      span {
+        font-size: 16px;
+        margin-top: 50px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
     <div id="container">
         <div id="inner">
             <h3>LOGIN</h3>
@@ -109,35 +112,34 @@
         </div>
         
     </div>
-</body>
+  </body>
 </html>
 <script>
-    document.getElementById("myform").addEventListener("submit", signIn);
-    var regUser = JSON.parse(localStorage.getItem("user")) || [];
-  ​
-    function signIn(e) {
-      e.preventDefault();
-  ​
-      var email = document.getElementById("userid").value;
-      var password = document.getElementById("password").value;
-  ​
-      if (!email || !password) {
-        alert("Enter All of the details");
-      } else {
-        for (var i = 0; i < regUser.length; i++) {
-          if (regUser[i].email === email && regUser[i].password === password) {
-            alert("Signin Sucessfully");
-            window.location.href =
-            //   "file:///D:/Masai%20Codes/Day-15/E-commerce/products.html";
-            return;
-          } else if (email == "admin@gmail.com" && password == "admin") {
-            alert("Admin Signin Sucessfully");
-            window.location.href =
-            //   "file:///D:/Masai%20Codes/Day-15/E-commerce/form.html";
-            return;
-          }
+  document.getElementById("myform").addEventListener("submit", signIn);
+  var regUser = JSON.parse(localStorage.getItem("user")) || [];
+  function signIn(e) {
+    e.preventDefault();
+    var email = document.getElementById("userid").value;
+    var password = document.getElementById("password").value;
+
+    if (!email || !password) {
+      alert("Enter All of the details");
+    } else {
+      for (var i = 0; i < regUser.length; i++) {
+        if (regUser[i].email === email && regUser[i].password === password) {
+          alert("Signin Sucessfully");
+          window.location.href = "https://www.google.com";
+          //   "file:///D:/Masai%20Codes/Day-15/E-commerce/products.html";
+          return;
+        } else if (email == "admin@gmail.com" && password == "admin") {
+          alert("Admin Signin Sucessfully");
+          //redirect admin page
+          window.location.href = "https://www.youtube.com";
+          //   "file:///D:/Masai%20Codes/Day-15/E-commerce/form.html";
+          return;
         }
-        alert("Wrong Credintial");
       }
+      alert("Wrong Credintial");
     }
-  </script>
+  }
+</script>
