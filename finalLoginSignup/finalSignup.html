@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 20px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: fit-content;
+        height: fit-content;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+      }
+
+      /* Add Animation */
+
+      @keyframes animatetop {
+        from {
+          top: -20px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      /* The Close Button */
+      .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        top: 0;
+        position: relative;
+      }
+      .close {
+        color: silver;
+      }
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .modal-body {
+        padding: 2px 16px;
+      }
+
+      .final {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .signup {
+        box-shadow: 1px 1px 4px 8px rgba(209, 209, 209, 0.3);
+      }
+      #container {
+        width: 50%;
+        height: 800px;
+        margin: auto;
+        font-family: sans-serif;
+      }
+      #inner {
+        width: 300px;
+        height: 500px;
+        margin: auto;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        /* border: 1px solid black; */
+      }
+      h3 {
+        margin-top: 30px;
+        color: #84c225;
+      }
+
+      #mobile {
+        width: 80%;
+        height: 25px;
+        margin-top: 30px;
+        border: none;
+        border-bottom: 1px solid gray;
+        color: #333333;
+        outline: none;
+        font-style: italic;
+      }
+      #email {
+        width: 80%;
+        height: 25px;
+        margin-top: 60px;
+        border: none;
+        border-bottom: 1px solid gray;
+        color: #333333;
+        outline: none;
+        font-style: italic;
+      }
+      #password {
+        width: 80%;
+        height: 25px;
+        margin-top: 30px;
+        border: none;
+        border-bottom: 1px solid gray;
+        color: #333333;
+        outline: none;
+        font-style: italic;
+      }
+      /* #one{
+           margin-top: 100px;
+           text-align:center;
+           width:60%;
+           height:40px;
+           border-radius: 5px;
+           background-color: whitesmoke;
+           border:1px solid black;
+           font-weight: lighter;
+           
+       } */
+      #two {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 80%;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #84c225;
+        color: white;
+        border: none;
+        font-weight: light-bold;
+        font-size: 15px;
+      }
+
+      p {
+        font-size: 8px;
+        position: relative;
+        font-weight: lighter;
+        color: #333333;
+        font-family: sans-serif;
+        line-height: 15px;
+      }
+      a {
+        color: royalblue;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      span {
+        font-size: 12px;
+        margin-top: 50px;
+        color: gray;
+      }
+      .externalBox {
+        width: 280px;
+        height: 440px;
+        /* border: 1px solid rgb(141, 141, 143); */
+        margin: auto;
+      }
+      /* center part */
+      /* R is Return policy
+      Q is Quality */
+      .Qbox {
+        margin-top: 115px;
+        margin-left: 50px;
+        display: flex;
+        border-bottom: 1px dashed rgb(145, 142, 142);
+
+        color: grey;
+        padding-bottom: 8px;
+        margin-right: 70px;
+      }
+      .Rbox {
+        margin-left: 50px;
+        display: flex;
+        border-bottom: 1px dashed rgb(145, 142, 142);
+        color: grey;
+        padding-top: 10px;
+        margin-right: 70px;
+      }
+      .iconQ > img {
+        height: 100%;
+        width: 100%;
+        color: grey;
+      }
+      .iconQ {
+        height: 25px;
+        width: 25px;
+        color: grey;
+        margin-right: 15px;
+      }
+      .iconQ > img {
+        height: 100%;
+        width: 100%;
+        color: grey;
+      }
+      .iconR {
+        height: 25px;
+        width: 25px;
+        color: grey;
+        margin-right: 15px;
+      }
+      .iconR > img {
+        height: 100%;
+        width: 100%;
+        color: grey;
+      }
+
+      /* lower part  */
+      .quote {
+        margin-top: 90px;
+        margin-left: 3px;
+        color: rgb(105, 100, 100);
+        font-weight: lighter;
+      }
+      .appStore {
+        display: flex;
+      }
+      .google {
+        height: 40px;
+        width: 130px;
+        border: 1px solid rgb(145, 142, 142);
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+      }
+      .app {
+        height: 40px;
+        width: 130px;
+        border: 1px solid rgb(145, 142, 142);
+        /* border: 1px solid tomato; */
+        display: flex;
+        margin-top: 15px;
+      }
+      .googleIcon {
+        height: 30px;
+        width: 30px;
+        display: flex;
+      }
+      .googleIcon > img {
+        width: 100%;
+        height: 100%;
+        /* padding: 1px; */
+      }
+      .googletext {
+        /* border: 1px solid rgb(20, 255, 126); */
+        margin-left: 5px;
+        color: grey;
+        text-align: center;
+        height: fit-content;
+      }
+      .googletext > a {
+        text-decoration: none;
+        color: rgb(129, 125, 125);
+      }
+      .appIcon {
+        height: 25px;
+        width: 25px;
+        display: flex;
+        /* border: 1px solid violet; */
+
+        padding: 5px;
+        margin-left: 5px;
+      }
+      .appIcon > img {
+        width: 100%;
+        height: 100%;
+      }
+      .apptext {
+        /* border: 1px solid rgb(20, 255, 126); */
+        /* margin-left: 2px; */
+        color: grey;
+        height: fit-content;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .apptext > a {
+        text-decoration: none;
+        color: rgb(129, 125, 125);
+      }
+      hr {
+        font-weight: lighter;
+        width: 80%;
+        margin-left: 15px;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="myBtn">Signup</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="close">&times;</div>
+        <div class="modal-body">
+          <div class="final">
+            <div class="signup">
+              <!-- <div id="container"> -->
+              <div id="inner">
+                <h3>SIGN UP</h3>
+                <form action="" id="form">
+                  <!-- <label for="">Email</label> -->
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="Enter Email"
+                  /><br />
+
+                  <!-- <label for="">Mobile No</label> -->
+                  <input
+                    id="mobile"
+                    type="text"
+                    maxlength="10"
+                    placeholder="Enter Mobile Number"
+                  /><br />
+
+                  <!-- <label for="">Password</label>  -->
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="Enter Password"
+                  /><br />
+
+                  <button id="two" type="submit">Signup</button>
+                </form>
+                <span
+                  >If already have account?
+                  <a href="finalLogin.html">Login Here</a></span
+                >
+                <p>
+                  By continuing, I accept TCP-bigbasket's
+                  <a href="">Terms and Conditions</a><br />
+                  and
+                  <a href="">Privacy Policy.</a>
+                </p>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- ***refrence page*** -->
+
+            <div class="refrence">
+              <div class="externalBox">
+                <div class="Qbox">
+                  <div class="iconQ">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/4497/4497523.png"
+                    />
+                  </div>
+                  <div class="textQ" style="color: rgb(145, 137, 137)">
+                    <div style="font-weight: lighter">Quality</div>
+                    <p style="margin-top: 5px">You can trust</p>
+                  </div>
+                </div>
+
+                <div class="Rbox">
+                  <div class="iconR">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/645/645084.png"
+                    />
+                  </div>
+                  <div class="textR">
+                    <div style="font-weight: lighter" ;>Return policy</div>
+                    <p style="margin-top: 5px">No questions asked</p>
+                  </div>
+                </div>
+
+                <hr />
+                <div class="quote">
+                  Shopping at fingertips!!Download our app
+                </div>
+                <div class="appStore">
+                  <div class="google">
+                    <div class="googleIcon">
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/128/1077/1077003.png"
+                      />
+                    </div>
+                    <div class="googletext">
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.bigbasket.mobileapp"
+                      >
+                        Google Play</a
+                      >
+                    </div>
+                  </div>
+                  <div class="app">
+                    <div class="appIcon">
+                      <img
+                        src=" https://cdn-icons-png.flaticon.com/128/731/731985.png"
+                      />
+                    </div>
+                    <div class="apptext">
+                      <a
+                        href="https://apps.apple.com/in/app/bigbasket-grocery-delivery/id660683603"
+                        >App Store</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("form").addEventListener("submit", userList);
+      var arr = JSON.parse(localStorage.getItem("user")) || [];
+
+      function userList(e) {
+        e.preventDefault();
+        console.log("clicked");
+
+        var email = document.getElementById("email").value;
+        var mobile = document.getElementById("mobile").value;
+        var password = document.getElementById("password").value;
+        if (!email || !mobile || !password) {
+          alert("Enter all of the details");
+        } else {
+          var userObj = {
+            email: email,
+            mobile: mobile,
+            password: password,
+          };
+          arr.push(userObj);
+          localStorage.setItem("user", JSON.stringify(arr));
+          window.location.href = "login.html";
+        }
+      }
+
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
