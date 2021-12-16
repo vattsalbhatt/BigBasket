@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Navbar Props -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Lato Fonts impoting -->
     <!-- Roboto Slab Importing -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,10 +26,98 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <<<<<<< HEAD <
     <div class="container">
       <!-- NAVBAR STARTS here -->
-      <div></div>
+      <div>
+        <div id="nav">
+          <!-- id burger and person for medium and small screen -->
+          <!-- these two not visible on large screen -->
+          <div id="burger">
+            <i class="material-icons" style="font-size: 40px">menu</i>
+          </div>
+          <div id="person">
+            <i class="material-icons" style="font-size: 40px">person</i>
+          </div>
+
+          <!-- top bar -->
+          <div class="header">
+            <ul>
+              <li>
+                <i class="material-icons" style="font-size: 16px">local_phone</i
+                ><span> 1860 123 1000 </span>
+              </li>
+              <li>
+                <i class="material-icons" style="font-size: 16px">my_location</i
+                ><span> 400000,Banglore </span>
+              </li>
+              <li>
+                <i class="material-icons" style="font-size: 16px" id="person"
+                  >person</i
+                ><span> Login/Signup </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- logo -->
+          <div class="menu">
+            <img src="images/bbLogo.png" alt="" />
+          </div>
+
+          <!-- search tab -->
+          <div class="content">
+            <div id="input">
+              <input
+                type="search"
+                id="search"
+                placeholder="Search for Products..."
+              />
+              <button class="find">
+                <i class="fa fa-search" style="font-size: 16px"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- basket/cart tab -->
+          <div class="card">
+            <i
+              class="fa fa-shopping-cart"
+              style="font-size: 40px; color: red"
+            ></i>
+            <div>
+              <p>My Basket</p>
+              <p>0 items</p>
+            </div>
+          </div>
+
+          <!-- this 2 only visible on  medium and small screen-->
+          <div id="location">
+            <i class="material-icons" style="font-size: 40px">my_location</i>
+          </div>
+          <div id="cart">
+            <i
+              class="fa fa-shopping-cart"
+              style="font-size: 40px; color: black"
+            ></i>
+          </div>
+        </div>
+        <!-- shop by category on hover dropdown -->
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">
+              Shop By Category
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Fruits and Vegetables</a>
+              <a href="#">Bakery,cakes & Dairy</a>
+              <a href="#">Beverage</a>
+              <a href="#">Beauty & Hygiene</a>
+              <a href="#">Baby Care</a>
+              <a href="#">Snack</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- NAVBAR ENDS here -->
       <!-- Carousel Starts here -->
       <div></div>
@@ -419,6 +517,5 @@
       </div>
       <!-- FOOTER Ends here -->
     </div>
-    ======= >>>>>>> fb54e62a5e10e16ef2b1ba1da2865b6a94e54541
   </body>
 </html>
