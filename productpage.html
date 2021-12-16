@@ -1,163 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Lato Fonts impoting -->
     <!-- Roboto Slab Importing -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Slab:wght@300&display=swap"/>
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Slab:wght@300&display=swap"
+    />
     <style>
-        #container{
-            margin:auto;
-            width: 80%;
-            display: grid;
-            grid-template-columns:20% 30% 40%;
-            grid-template-rows: 400px;
-            grid-gap:50px;
-            /* border: 1px solid black; */
-            font-family:Roboto,sans-serif;
-        }
-        #container2{
-            /* border: 1px solid black; */
-            margin:auto;
-            width:80%;
-            margin-top: 30px;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #container {
+        margin: auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: 400px;
+        grid-gap: 20px;
+        /* border: 1px solid black; */
+        font-family: Roboto, sans-serif;
+      }
+      #container2 {
+        /* border: 1px solid black; */
+        margin: auto;
+        width: 100%;
+        /* margin-top: 30px; */
+      }
 
-        /* #header{
-            width:100%;
-            height: 100px;
-            border: 1px solid red;
-            margin-bottom:20px;
-            /* margin:auto; */
-        } */
+      /* #header{
+                  width:100%;
+                  height: 100px;
+                  border: 1px solid red;
+                  margin-bottom:20px;
+                  margin:auto;
+       } */
+      #A2 {
+        width: 100%;
+        text-align: center;
+      }
 
-        #A1{
-            /* border: 1px solid red; */
-            border-right: 3px solid gray;
-            border-width: 50%;
-            border-radius: 30px;
-        }
-
-        #A2{
-            /* border: 1px solid red; */
-            text-align: center;
-        }
-
-        #A3{
-            /* border: 1px solid red; */
-        }
-        #B1{
-            margin-top: 10px;
-        }
-        #B2{
-            display:flex;
-            width:100%;
-            text-align: center;
-            margin-top:30px;
-            /* padding-left: 10px; */
-            /* border: 1px solid black; */
-           
-
-        }
-        .images{
-            margin:auto;
-            width:60px;
-            height: 60px;
-            border: 1px solid;
-            padding-left: 5pxpx;
-        }
-        #A3{
-          padding:20px;
-          line-height:30px;
-          
-        }
-        #price{
-            display:flex;
-            /* padding-left: 10px; */
-            /* justify-content:space-between; */
-        }
-        #price>div{
-            margin-left: 10px;
-            margin-top: 15px;
-        }
-        #quantity{
-            width: 40px;
-            height:40px;
-            border-radius: 5px;
-            border: 1px solid gray;
-        }
-        #buttons{
-            display: flex;
-            /* padding: 10px; */
-            margin-top: none;
-        }
-        #time{
-            display:flex;
-            /* padding-left:10px; */
-            margin-top: 10px;
-        }
-        .small{
-            color: gray;
-            font-size:10px
-        }
-        .discount{
-            color:brown ;
-            font-size:15px;
-        }
-        #add{
-            margin-left:5px;
-            width:170px;
-            background-color:#84c225;
-            border-radius: 5px;
-            border:none;
-            color: aliceblue;
-            font-weight:bold;
-        }
-        #save{
-            margin-left: 10px;
-            width:100px;
-            /* background-color:#84c225; */
-            border-radius: 5px;
-            border:1px solid gray;
-            color: gray;
-            font-weight:lighter;
-            
-
-
-        }
-        p{
-            color:gray;
-            font-size: 15px;
-            text-decoration: underline;
-            margin-bottom: none;
-            
-            
-        }
-        #title{
-            color:black;
-            font-size: 20px;
-            font-weight:lighter;
-            margin-top: none;
-        }
-        .container1{
+      #B1 {
+        margin-top: 10px;
+      }
+      #B2 {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        /* padding-left: 10px; */
+        /* border: 1px solid black; */
+      }
+      .images {
+        margin: auto;
+        width: 60px;
+        height: 60px;
+        border: 1px solid;
+        padding-left: 5pxpx;
+      }
+      #A3 {
+        padding: 10px;
+        line-height: 30px;
+      }
+      #price {
+        display: flex;
+        /* padding-left: 10px; */
+        /* justify-content:space-between; */
+      }
+      #price > div {
+        margin-left: 10px;
+        margin-top: 15px;
+      }
+      #quantity {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+      #buttons {
+        display: flex;
+        /* padding: 10px; */
+        margin-top: none;
+      }
+      #time {
+        display: flex;
+        /* padding-left:10px; */
+        margin-top: 10px;
+      }
+      .small {
+        color: gray;
+        font-size: 10px;
+      }
+      .discount {
+        color: brown;
+        font-size: 15px;
+      }
+      #add {
+        margin-left: 5px;
+        width: 170px;
+        background-color: #84c225;
+        border-radius: 5px;
+        border: none;
+        color: aliceblue;
+        font-weight: bold;
+      }
+      #save {
+        margin-left: 10px;
+        width: 100px;
+        /* background-color:#84c225; */
+        border-radius: 5px;
+        border: 1px solid gray;
+        color: gray;
+        font-weight: lighter;
+      }
+      p {
+        color: gray;
+        font-size: 15px;
+        text-decoration: underline;
+        margin-bottom: none;
+      }
+      #title {
+        color: black;
+        font-size: 20px;
+        font-weight: lighter;
+        margin-top: none;
+      }
+      .container1 {
         /* border:1px solid olivedrab; */
         width: 100%;
         display: grid;
         /* grid-gap:25px; */
         /* grid-template:
-          "a1"
-          "a2"
-          "a3"
-          "a4"
-          "a5"
-          "a6"
-          ; */
+                "a1"
+                "a2"
+                "a3"
+                "a4"
+                "a5"
+                "a6"
+                ; */
       }
       .prodTitle {
         /* grid-area: a1; */
@@ -245,197 +231,247 @@
         height: 50%;
         width: 50%;
       }
-      .para6{
-          width: 220px;
-          /* border:1px solid hotpink; */
-          font-size: 14px;
-          text-align: center;
+      .para6 {
+        width: 220px;
+        /* border:1px solid hotpink; */
+        font-size: 14px;
+        text-align: center;
       }
       hr {
         font-weight: lighter;
       }
-      body{
-        font-family: 'Roboto', sans-serif;
+      body {
+        font-family: "Roboto", sans-serif;
       }
-    
-        @media only screen and (min-width:376px) and (max-width:768px){
-          
 
-            #container{
-                grid-template-columns:repeat(2,1fr);
-            }
-            #A1{
-            display:none;
-            }
-            #header{
-            display:none;
-            }
+      @media only screen and (min-width: 376px) and (max-width: 768px) {
+        #container {
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+          margin: 10px;
         }
-        @media only screen and (min-width:0px) and (max-width:376px){
-            #container{
-                width:100%;
-                grid-template-columns:repeat(1,1fr);
 
-            }
-            #A1{
-            display:none;
+        #container2 {
+          margin-top: 15px;
         }
-        #header{
-            display:none;
-            }
+        #A1 {
+          display: none;
         }
-       
-
+        #header {
+          display: none;
+        }
+      }
+      @media only screen and (min-width: 0px) and (max-width: 376px) {
+        #container {
+          width: 100%;
+          grid-template-columns: repeat(1, 1fr);
+        }
+        #A1 {
+          display: none;
+        }
+        #A2 {
+          width: 95%;
+          margin: auto;
+        }
+        #A3 {
+          padding: 10px;
+          line-height: 30px;
+          width: 90%;
+          margin: auto;
+        }
+        #header {
+          display: none;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header"></div>
     <div id="container">
-        <div id="A1">category</div>
-        <div id="A2">
-            <div id="B1">
-                <img src="https://www.bigbasket.com/media/uploads/p/l/10000201_15-fresho-tomato-hybrid.jpg" alt="" height="250px" width="80%">
-            </div>
-            <div id="B2">
-             <img class="images" src="https://www.bigbasket.com/media/uploads/p/l/10000201_15-fresho-tomato-hybrid.jpg" alt="">
-             <img class="images" src="https://www.bigbasket.com/media/uploads/p/l/10000201-2_2-fresho-tomato-hybrid.jpg" alt="">
-             <img class="images" src="https://www.bigbasket.com/media/uploads/p/l/10000201-3_3-fresho-tomato-hybrid.jpg" alt="">
-             <img class="images" src="https://www.bigbasket.com/media/uploads/p/l/10000201-4_2-fresho-tomato-hybrid.jpg" alt="">
-             <img class="images" src="https://www.bigbasket.com/media/uploads/p/l/10000201-5_1-fresho-tomato-hybrid.jpg" alt="">
-            </div>
+      <div id="A1">category</div>
+      <div id="A2">
+        <div id="B1">
+          <img
+            src="https://www.bigbasket.com/media/uploads/p/l/10000201_15-fresho-tomato-hybrid.jpg"
+            alt=""
+            height="250px"
+            width="80%"
+          />
         </div>
-        <div id="A3">
-            <div >
-               <div><p>Fresho</p></div>
-               <div id="title">Fresho Tomato - Hybrid, 500 g</div> 
-            </div>
-           
-            <div id="price">
-            <div class="small">MRP:<span style="text-decoration:line-through">Rs 53.30</span></div>
-            <div>Price:Rs 32.83</div>
-            <div><span  class="discount">You Save:38%</span><span class="small">(inclusive of all taxes)</span></div>
-            </div>
-            <div id="buttons">
-                <input type="number" value="" id="quantity">
-                <BUtton id="add">ADD TO BASKET</BUtton>
-                <BUtton id="save">SAVE</BUtton>
-            </div>
-            <div id="time">
-             <div><img style="margin-top: 5px;margin-right:5px" src="https://as2.ftcdn.net/v2/jpg/04/29/77/43/1000_F_429774398_0O6fbBXVI0mDCxxSabPgdfpWGWVkKAEA.jpg" alt="" height="20px" width="20px"></div>
-             <div><span class="small"> Today1:30PM - 3:30PM</span></div>
-            </div>
+        <div id="B2">
+          <img
+            class="images"
+            src="https://www.bigbasket.com/media/uploads/p/l/10000201_15-fresho-tomato-hybrid.jpg"
+            alt=""
+          />
+          <img
+            class="images"
+            src="https://www.bigbasket.com/media/uploads/p/l/10000201-2_2-fresho-tomato-hybrid.jpg"
+            alt=""
+          />
+          <img
+            class="images"
+            src="https://www.bigbasket.com/media/uploads/p/l/10000201-3_3-fresho-tomato-hybrid.jpg"
+            alt=""
+          />
+          <img
+            class="images"
+            src="https://www.bigbasket.com/media/uploads/p/l/10000201-4_2-fresho-tomato-hybrid.jpg"
+            alt=""
+          />
+          <img
+            class="images"
+            src="https://www.bigbasket.com/media/uploads/p/l/10000201-5_1-fresho-tomato-hybrid.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="A3">
+        <div>
+          <div><p>Fresho</p></div>
+          <div id="title">Fresho Tomato - Hybrid, 500 g</div>
+        </div>
 
+        <div id="price">
+          <div class="small">
+            MRP:<span style="text-decoration: line-through">Rs 53.30</span>
+          </div>
+          <div>Price:Rs 32.83</div>
+          <div>
+            <span class="discount">You Save:38%</span
+            ><span class="small">(inclusive of all taxes)</span>
+          </div>
         </div>
+        <div id="buttons">
+          <input type="number" value="" id="quantity" />
+          <button id="add">ADD TO BASKET</button>
+          <button id="save">SAVE</button>
+        </div>
+        <div id="time">
+          <div>
+            <img
+              style="margin-top: 5px; margin-right: 5px"
+              src="https://as2.ftcdn.net/v2/jpg/04/29/77/43/1000_F_429774398_0O6fbBXVI0mDCxxSabPgdfpWGWVkKAEA.jpg"
+              alt=""
+              height="20px"
+              width="20px"
+            />
+          </div>
+          <div><span class="small"> Today1:30PM - 3:30PM</span></div>
+        </div>
+      </div>
     </div>
-            <div id="container2">
-                <div class="container1">
-                    <div class="prodTitle">
-                      Fresho Onion
-                      <hr />
-                      <div class="About">
-                        About the Product
-                        <div class="para1">
-                          <ul>
-                            <li>
-                              Onions are known to be rich in biotin. Most of the flavonoids
-                              which are known as anti-oxidants are concentrated more in the
-                              outer layers, so when you peel off the layers, you should remove
-                              as little as possible.
-                            </li>
-                            <li>
-                              Onion can fill your kitchen with a thick spicy aroma. It is a
-                              common base vegetable in most Indian dishes, thanks to the
-                              wonderful flavor that it adds to any dish.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="Benefits">
-                        Benefits
-                        <div class="para2">
-                          <ul>
-                            <li>
-                              Onions are high in sulphur, Folic acid, Amino acid, vitamin B6
-                              and B9. It has high quantities of water and naturally low in
-                              fat. It is high in phytochemical compounds.
-                            </li>
-                            <li>
-                              Onions are known to have antiseptic, antimicrobial and
-                              antibiotic properties which help you to get rid of infections.If
-                              a piece of onion is inhaled, it can slow down or stop nose
-                              bleeding. Those who have sleeping disorders or insomnia can have
-                              a good night sleep if they have an onion every day.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="StorageUses">
-                        Storage and Uses
-                        <div class="para3">
-                          <ul>
-                            <li>Store in a cool dry place, need not refridgerate.</li>
-                            <li>
-                              Freezing onions, soaking them under water and keeping the root
-                              intact before chopping are some methods to reduce tears while
-                              chopping them.
-                            </li>
-                            <li>
-                              It is a versatile vegetable that can be used raw, sauteed,
-                              caramelized, roasted, deep fried, pureed or boiled as required.
-                            </li>
-                            <li>
-                              It lends itself very well to almost any cuisine.It can be
-                              consumed with salads, curries or chutnies.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="OtherProdInfo">
-                        Other Product Info
-                        <div class="para4">EAN Code: 40075537 <br>Country of origin: India</div>
-                      </div>
-                      <hr />
-                      <div class="varriableWtPolicy">
-                        Varriable Weight Policy
-                        <div class="imagebox">
-                          <img
-                            src="https://cdn-icons-png.flaticon.com/128/2929/2929016.png"
-                          />
-                        </div>
-                        <div class="para5">
-                          Please note that the item(s) in this product may vary slightly in
-                          size and weight. Hence, the actual weight of the product delivered
-                          can have a small variance. You will be billed based on the actual
-                          weight during order processing.
-                        </div>
-                      </div>
-                      <hr />
-                      <div class="rating">
-                        Rating and Reviews
-                        <div class="ratingBox">
-                          <div class="ratingIcon">
-                            <img
-                              src="https://cdn-icons-png.flaticon.com/128/4219/4219730.png"
-                            />
-                            <div class="para6"><span style="color: rgb(143, 140, 140);">Want to rate this product?</span><br><br>
-                             <span style="color: rgb(100, 94, 94);">You can rate and review this product<br>
-                              only after purchasing from bigbasket.</span>
-                              </div>
-                          </div>
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-    
-                
-    
+    <div id="container2">
+      <div class="container1">
+        <div class="prodTitle">
+          Fresho Onion
+          <hr />
+          <div class="About">
+            About the Product
+            <div class="para1">
+              <ul>
+                <li>
+                  Onions are known to be rich in biotin. Most of the flavonoids
+                  which are known as anti-oxidants are concentrated more in the
+                  outer layers, so when you peel off the layers, you should
+                  remove as little as possible.
+                </li>
+                <li>
+                  Onion can fill your kitchen with a thick spicy aroma. It is a
+                  common base vegetable in most Indian dishes, thanks to the
+                  wonderful flavor that it adds to any dish.
+                </li>
+              </ul>
             </div>
-       
-            
-</body>
+          </div>
+          <hr />
+          <div class="Benefits">
+            Benefits
+            <div class="para2">
+              <ul>
+                <li>
+                  Onions are high in sulphur, Folic acid, Amino acid, vitamin B6
+                  and B9. It has high quantities of water and naturally low in
+                  fat. It is high in phytochemical compounds.
+                </li>
+                <li>
+                  Onions are known to have antiseptic, antimicrobial and
+                  antibiotic properties which help you to get rid of
+                  infections.If a piece of onion is inhaled, it can slow down or
+                  stop nose bleeding. Those who have sleeping disorders or
+                  insomnia can have a good night sleep if they have an onion
+                  every day.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="StorageUses">
+            Storage and Uses
+            <div class="para3">
+              <ul>
+                <li>Store in a cool dry place, need not refridgerate.</li>
+                <li>
+                  Freezing onions, soaking them under water and keeping the root
+                  intact before chopping are some methods to reduce tears while
+                  chopping them.
+                </li>
+                <li>
+                  It is a versatile vegetable that can be used raw, sauteed,
+                  caramelized, roasted, deep fried, pureed or boiled as
+                  required.
+                </li>
+                <li>
+                  It lends itself very well to almost any cuisine.It can be
+                  consumed with salads, curries or chutnies.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="OtherProdInfo">
+            Other Product Info
+            <div class="para4">
+              EAN Code: 40075537 <br />Country of origin: India
+            </div>
+          </div>
+          <hr />
+          <div class="varriableWtPolicy">
+            Varriable Weight Policy
+            <div class="imagebox">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/2929/2929016.png"
+              />
+            </div>
+            <div class="para5">
+              Please note that the item(s) in this product may vary slightly in
+              size and weight. Hence, the actual weight of the product delivered
+              can have a small variance. You will be billed based on the actual
+              weight during order processing.
+            </div>
+          </div>
+          <hr />
+          <div class="rating">
+            Rating and Reviews
+            <div class="ratingBox">
+              <div class="ratingIcon">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/4219/4219730.png"
+                />
+                <div class="para6">
+                  <span style="color: rgb(143, 140, 140)"
+                    >Want to rate this product?</span
+                  ><br /><br />
+                  <span style="color: rgb(100, 94, 94)"
+                    >You can rate and review this product<br />
+                    only after purchasing from bigbasket.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
