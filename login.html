@@ -17,12 +17,13 @@
        #container{
            width: 50%;
            height:800px;
-           margin:auto;
+           
            font-family:sans-serif;
        }
        #inner{
-           width:100%;
+           width:300px;
            height:500px;
+           margin:auto;
            text-align:center;
            font-family:Roboto,sans-serif;
            border:1px solid black;
@@ -32,9 +33,9 @@
         color: #84c225; 
        }
        #email{
-           width:200px;
+           width:70%;
            height:25px;
-           margin-top: 50px;
+           margin-top: 100px;
            border: none;
            border-bottom: 1px solid gray;
            color:#333333;
@@ -42,9 +43,9 @@
            font-style: italic;
        }
        #password{
-           width:200px;
+           width:70%;
            height:25px;
-           margin-top: 50px;
+           margin-top: 25px;
            border: none;
            border-bottom: 1px solid gray;
            color:#333333;
@@ -64,7 +65,7 @@
        #two{
            margin-top: 120px;
            text-align:center;
-           width:60%;
+           width:80%;
            height:40px;
            border-radius: 5px;
            background-color:#84c225 ;
@@ -75,7 +76,7 @@
        }
 
       p {
-        font-size: 11px;
+        font-size:9px;
         position: relative;
         font-weight: lighter;
         color: #333333;
@@ -93,10 +94,22 @@
         margin-top: 50px;
         color: gray;
       }
+      @media only screen and (min-width:376px) and (max-width:768px){
+            #iiner{
+                grid-template-columns:repeat(2,1fr);
+            }
+        }
+        @media only screen and (min-width:0px) and (max-width:376px){
+            #inner{
+                width:100%;
+                grid-template-columns:repeat(1,1fr);
+
+            }
+        }
     </style>
   </head>
   <body>
-    <div id="container">
+    <!-- <div id="container"> -->
         <div id="inner">
             <h3>LOGIN</h3>
             <form action="" id="form">
@@ -107,11 +120,11 @@
                 <input id="password" type="password"  placeholder="PASSWORD" /><br>
         ​
                 <button id="two" type="submit">Continue</button>
-            <p>By continuing, I accept TCP-bigbasket’s <a href="">Terms and Conditions</a> and <br> <a href="">Privacy Policy.</a> </p>
+            <p>By continuing, I accept TCP-bigbasket’s <a href="">Terms and Conditions</a><br> and  <a href="">Privacy Policy.</a> </p>
 
         </div>
         
-    </div>
+    <!-- </div> -->
   </body>
 </html>
 <script>
