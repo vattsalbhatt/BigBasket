@@ -31,8 +31,8 @@
         margin-top: 30px;
         color: #84c225; 
        }
-       #userid{
-           width:60%;
+       #email{
+           width:200px;
            height:25px;
            margin-top: 50px;
            border: none;
@@ -42,7 +42,7 @@
            font-style: italic;
        }
        #password{
-           width:60%;
+           width:200px;
            height:25px;
            margin-top: 50px;
            border: none;
@@ -51,7 +51,7 @@
            outline:none; 
            font-style: italic;
        }
-       #one{
+       /* #one{
            margin-top: 100px;
            text-align:center;
            width:60%;
@@ -60,9 +60,7 @@
            background-color: whitesmoke;
            border:1px solid black;
            font-weight: lighter;
-           
-
-       }
+       } */
        #two{
            margin-top: 120px;
            text-align:center;
@@ -73,6 +71,7 @@
            color:white;
            border:none;
            font-weight: light-bold;
+           font-size: 15px;
        }
 
        p{
@@ -96,18 +95,15 @@
 <body>
     <div id="container">
         <div id="inner">
-            <h3>LOGIN/SIGN UP</h3>
-            <form action="" id="myform">
-                <input id="userid" type="text" placeholder="USERNAME"><br>
-                <input id="password" type="password" placeholder="PASSWORD">
-                <input type="submit" value="continue" id="two">
-            </form>
-            
-            <div id="abc">
-                <!-- <input id="one" type="button" value="Login using Email Address"><br> -->
-                <!-- <input id="two" type="button" value="Continue"> -->
-               
-            </div>
+            <h3>LOGIN</h3>
+            <form action="" id="form">
+                <!-- <label for="">E</label> -->
+                <input id="email" type="email" placeholder="USERNAME" /><br>
+        ​
+                <!-- <label for="">Password</label> -->
+                <input id="password" type="password"  placeholder="PASSWORD" /><br>
+        ​
+                <button id="two" type="submit">Continue</button>
             <p>By continuing, I accept TCP-bigbasket’s <a href="">Terms and Conditions</a> and <br> <a href="">Privacy Policy.</a> </p>
 
         </div>
