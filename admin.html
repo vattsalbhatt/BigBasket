@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <style>
+
+        .container {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;                          
+            width: 500px;
+            border-radius: 8px;
+            margin: auto;
+            padding: 50px;
+            color:black;
+            align-items: center;
+            text-align: left;
+        }
+        #AddPro{
+            display:flex;
+        }
+        .label{
+            width:30%;
+            line-height: 34px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left:50px;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgb(38, 143, 3);
+            text-align: center;
+            text-decoration: underline;
+        }
+        input,
+        select,
+        button {
+            background-color: rgb(255, 255, 255);
+            border: 3px solid rgb(38, 143, 3);
+            border-radius: 10px;
+            margin:5px;
+        }
+        #submit{
+            background-color: rgb(38, 143, 3);
+            color: white;
+            margin-left: 60px;
+        }
+        #submit:hover,#goto{
+            background-color: yellow;
+            color: black;
+        }
+        #goto{
+            background-color: yellow;
+            color: black;
+            margin-left: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ADD PRODUCT</h1>
+        <form id="AddPro">
+            <div class="label">
+                <label>Image URL</label>
+                <br>
+                <label>Brand</label>
+                <br>
+                <label>Product Name</label>
+                <br>
+                <label>Price MRP</label>
+                <br>
+                <label>Price Discount</label>
+                <br>
+                <label>Category</label>
+                <br>
+                <label>Quantity</label>
+                <br>
+            </div>
+            <div>
+                <input type="text" id="img">
+                <br>
+                <input type="text" id="brand">
+                <br>
+                <input type="text" id="proName">
+                <br>
+                <input type="number" id="mrp">
+                <br>
+                <input type="number" id="dis">
+                <br>
+                <select id="cat">
+                    <option>--</option>
+                    <option>Fruits & Vegetables</option>
+                    <option>Foodgrains, Oil & Masala</option>
+                    <option>Bakery, Cakes & Dairy</option>
+                    <option>Beverages</option>
+                    <option>Snacks & Branded Foods</option>
+                    <option>Beauty & Hygiene</option>
+                    <option>Cleaning & Household</option>
+                    <option>Kitchen, Garden & Pets</option>
+                    <option>Eggs, Meat & Fish</option>
+                    <option>Gourmet & World Food</option>
+                    <option>Baby Care</option>
+                    <option>View All</option>
+                </select>
+                <br>
+                <input type="number" id="qty">
+            </div>
+        </form>
+        <br>
+        <input type="submit" id="submit">
+        <br>
+        <button id="goto">Go to Product Page</button>
+        
+    </div>
+    <script>
+        document.querySelector("#AddPro").addEventListener("submit", addItem);
+        var arr = JSON.parse(localStorage.getItem("proData")) || [];
+
+        function addItem(elem) {
+            elem.preventDefault();
+            var image = document.querySelector("#img").value;
+            var brand = document.querySelector("#brand").value;
+            var name = document.querySelector("#proName").value;
+            var mrp = document.querySelector("#mrp").value;
+            var dis = document.querySelector("#dis").value;
+            var cat = document.querySelector("#cat").value;
+            var qty = document.querySelector("#qty").value;
+
+            var product = {
+                img:image,
+                brand:brand,
+                name:name,
+                mrp:mrp,
+                dis:dis,
+                cat:cat,
+                qty:qty,
+            };
+
+            arr.push(product);
+            console.log(arr);
+            localStorage.setItem("proData",JSON.stringify(arr));
+
+        }
+
+        document.querySelector("button").addEventListener("click",function(){
+
+            window.location.href="All_product.html";
+        })
+    </script>
+
+</body>
+
+</html>
