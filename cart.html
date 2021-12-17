@@ -231,13 +231,13 @@
                   <div>
                     <!-- Dynamic Total -->
                     <h1>TOTAL</h1>
-                    <h1>Rs.<span id="grandTotal1"> 1389.00</span></h1>
+                    <h1>Rs.<span id="grandTotal1"> 0.00</span></h1>
                   </div>
                 </div>
                 <div id="piggyIconDiv">
                   <div id="piggy"><i class="fas fa-piggy-bank"></i></div>
                   <!-- Total Saved Amt Dynamic -->
-                  <p>You Saved Rs. <span id="savedMoney"> 1785.00</span></p>
+                  <p>You Saved Rs. <span id="savedMoney"> 0.00</span></p>
                 </div>
               </div>
               <!-- Dynamic Price -->
@@ -246,7 +246,7 @@
                   *For this order: Accepted food coupon is Rs.<span
                     id="grandTotal2"
                   >
-                    1389.00</span
+                    0.00</span
                   >
                 </p>
                 <hr />
@@ -353,11 +353,26 @@
   console.log(cart);
   showCart(cart);
 
-  document
-    .querySelector("#continueShopBtn")
-    .addEventListener("click", function () {
-      window.localStorage.href = "All_product.html";
+  document.querySelector("#continueShopBtn").addEventListener("click", function () {
+      console.log("here")
+      window.location.href = "All_product.html";
     });
+
+    document.querySelector("#emptyBasketBtn").addEventListener("click", function () {
+      console.log("here")
+      cart = []
+      showCart(cart)
+      localStorage.setItem("cartValue", JSON.stringify(cart))
+   
+    });
+    document.querySelector("#checkoutBtn").addEventListener("click", function () {
+      // console.log("here")
+      window.location.href = "payment.html";
+
+     
+    });
+    
+
 
   function showCart(cart) {
     var totalSub = 0;
