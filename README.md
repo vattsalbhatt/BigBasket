@@ -2,8 +2,8 @@
 
 our first clone project
 
-All the files are made with Puse HTML, CSS & JS. No external libraries or plugins.
-All files are based on Local Storage.
+Whole clone is made with pure HTML, CSS & JS. No external libraries or plugins.
+All files are using Local Storage.
 
 ### Homepage
 
