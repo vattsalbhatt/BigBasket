@@ -131,7 +131,7 @@
               ></i>
               <div>
                 <p>My Basket</p>
-                <p>0 items</p>
+                <p><span id="bagLen">0</span> items</p>
               </div>
             </div>
 
@@ -174,7 +174,7 @@
       </div>
       <!-- Heading + item count -->
       <div id="itemCount">
-        <h3>Your Basket (01 item)</h3>
+        <h3>Your Basket( <span id="cartLen">0</span> items)</h3>
         <hr />
       </div>
       <!-- Cart Table -->
@@ -190,36 +190,7 @@
             </tr>
           </thead>
           <!-- TD Dummy Entries Starts  -->
-          <tbody>
-            <tr>
-              <td class="td1">Nestle Maggi pack of 4</td>
-              <td>Rs. 120</td>
-              <td>3</td>
-              <td>Rs. 300</td>
-              <td>Rs. 60</td>
-            </tr>
-            <tr>
-              <td class="td1">Nestle Maggi pack of 4</td>
-              <td>Rs. 120</td>
-              <td>3</td>
-              <td>Rs. 300</td>
-              <td>Rs. 60</td>
-            </tr>
-            <tr>
-              <td class="td1">Nestle Maggi pack of 4</td>
-              <td>Rs. 120</td>
-              <td>3</td>
-              <td>Rs. 300</td>
-              <td>Rs. 60</td>
-            </tr>
-            <tr>
-              <td class="td1">Nestle Maggi pack of 4</td>
-              <td>Rs. 120</td>
-              <td>3</td>
-              <td>Rs. 300</td>
-              <td>Rs. 60</td>
-            </tr>
-          </tbody>
+          <tbody></tbody>
         </table>
         <hr />
         <!-- Cart Table END-->
@@ -250,30 +221,33 @@
                   <div>
                     <p>Subtotal</p>
                     <!-- SUBTOTAL DYNAMIC -->
-                    <p>Rs. 4134.00</p>
+                    <p>Rs. <span id="subTotalSum">0.00</span></p>
                   </div>
                   <div>
-                    <p>Delivery Charges</p>
-                    <p>Rs. 00</p>
+                    <p>Total Discount</p>
+                    <p>Rs. <span id="subTotalDis">0.00</span></p>
                   </div>
                   <hr />
                   <div>
                     <!-- Dynamic Total -->
                     <h1>TOTAL</h1>
-                    <h1>Rs.1389.00</h1>
+                    <h1>Rs.<span id="grandTotal1"> 1389.00</span></h1>
                   </div>
                 </div>
                 <div id="piggyIconDiv">
                   <div id="piggy"><i class="fas fa-piggy-bank"></i></div>
                   <!-- Total Saved Amt Dynamic -->
-                  <p>You Saved <span>Rs. 1785.00</span></p>
+                  <p>You Saved Rs. <span id="savedMoney"> 1785.00</span></p>
                 </div>
               </div>
               <!-- Dynamic Price -->
               <div id="checkOutBtnDiv">
                 <p>
-                  *For this order: Accepted food coupon is
-                  <span> Rs.1389.00</span>
+                  *For this order: Accepted food coupon is Rs.<span
+                    id="grandTotal2"
+                  >
+                    1389.00</span
+                  >
                 </p>
                 <hr />
                 <div>
@@ -286,13 +260,13 @@
         </div>
         <!-- Cart Ends Here -->
         <!-- Similar Products Starts Here -->
-        <div id="similarProDiv">
+        <!-- <div id="similarProDiv">
           <div>
             <h2>Missed Something?</h2>
             <hr />
           </div>
           <div id="similarProducts"></div>
-        </div>
+        </div> -->
         <!-- Similar Products Ends here -->
         <hr
           style="
@@ -375,8 +349,60 @@
 </html>
 
 <script>
-  //   // Show Cart Funtion with MAP
-  //       function showCart(){
-  //           var
-  //       }
+  var cart = JSON.parse(localStorage.getItem("cartValue")) || [];
+  console.log(cart);
+  showCart(cart);
+
+  document
+    .querySelector("#continueShopBtn")
+    .addEventListener("click", function () {
+      window.localStorage.href = "All_product.html";
+    });
+
+  function showCart(cart) {
+    var totalSub = 0;
+    var totalDis = 0;
+    cart.map(function (elem) {
+      var row = document.createElement("tr");
+      var td1 = document.createElement("td");
+      td1.textContent = elem.name;
+      var td2 = document.createElement("td");
+      td2.textContent = "Rs. " + (elem.mrp - elem.dis);
+      var td3 = document.createElement("td");
+      td3.textContent = elem.qty;
+      var td4 = document.createElement("td");
+      td4.textContent = "Rs. " + elem.mrp;
+      var td5 = document.createElement("td");
+      td5.textContent = "Rs. " + elem.dis;
+      // console.log(parseInt(elem.mrp));
+      totalSub = totalSub + +elem.mrp;
+      totalDis = totalDis + +elem.dis;
+      totalDis + row.append(td1, td2, td3, td4, td5);
+      document.querySelector("tbody").append(row);
+
+      // console.log(typeof totalSub);
+      // console.log(td4);
+      printSubtotal(totalSub);
+      printDis(totalDis);
+      grandTotal(totalSub, totalDis);
+    });
+  }
+  var bagLen = document.querySelector("#bagLen");
+  var cartLen = document.querySelector("#cartLen");
+  bagLen.textContent = cart.length;
+  cartLen.textContent = cart.length;
+
+  function printSubtotal(totalSub) {
+    document.querySelector("#subTotalSum").textContent = totalSub;
+    // console.log(totalSub);
+  }
+  function printDis(totalDis) {
+    document.querySelector("#subTotalDis").textContent = totalDis;
+    document.querySelector("#savedMoney").textContent = totalDis;
+    // console.log(totalSub);
+  }
+  function grandTotal(totalSub, totalDis) {
+    document.querySelector("#grandTotal1").textContent = totalSub - totalDis;
+    document.querySelector("#grandTotal2").textContent = totalSub - totalDis;
+  }
 </script>
