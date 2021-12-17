@@ -140,7 +140,7 @@ body {
   grid-gap: 10px;
   margin-bottom: 30px;
 }
-#topImages > div > img {
+#topImages > div > a>img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -177,7 +177,7 @@ body {
 #c5 {
   grid-area: e;
 }
-#fruitImages > div > img {
+#fruitImages > div > a > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -196,7 +196,7 @@ body {
   grid-gap: 10px;
   margin-bottom: 40px;
 }
-#dailyStaple > div > img {
+#dailyStaple > div > a>img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -444,6 +444,10 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.card:hover{
+  border: 1px solid black
 }
 
 span {

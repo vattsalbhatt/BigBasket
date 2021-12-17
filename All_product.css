@@ -2,7 +2,7 @@
 .productpage {
   /* border: 1px solid gray; */
   width: 70%;
-  height: auto;
+  height: 2000px;
   margin: auto;
   font-family: "Lato";
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -190,7 +190,9 @@ hr {
       border: 1px solid;
   } */
 
-@media only screen and (min-width: 341px) and (max-width: 800px) {
+/* Footer CSS */
+
+@media only screen and (min-width: 401px) and (max-width: 800px) {
   /* .header {
     display: none;
   } */
@@ -210,7 +212,7 @@ hr {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 340px) {
+@media only screen and (min-width: 0px) and (max-width: 400px) {
   /* .header {
     display: none;
   } */
