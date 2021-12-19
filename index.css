@@ -112,9 +112,6 @@ body {
 }
 #myE {
   grid-area: b;
-  /* line-height: 0px; */
-  /* border: 1px solid red; */
-  /* margin-bottom: 20px; */
 }
 #bankImages {
   margin-top: 10px;
@@ -140,7 +137,7 @@ body {
   grid-gap: 10px;
   margin-bottom: 30px;
 }
-#topImages > div > a>img {
+#topImages > div > a > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -155,7 +152,7 @@ body {
   display: grid;
   /* border: 1px solid black;    */
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: 180px 180px; */
+
   grid-gap: 10px;
   margin-bottom: 30px;
   grid-template-areas:
@@ -192,11 +189,11 @@ body {
   display: grid;
   /* border: 1px solid black;    */
   grid-template-columns: repeat(6, 1fr);
-  /* grid-template-rows: 180px 180px; */
+
   grid-gap: 10px;
   margin-bottom: 40px;
 }
-#dailyStaple > div > a>img {
+#dailyStaple > div > a > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -277,7 +274,7 @@ body {
     font-family: "Roboto Slab", serif;
     color: #555555;
     margin-bottom: 0%;
-    /* margin-left: 200px; */
+
     font-weight: 600;
     display: block;
   }
@@ -286,15 +283,11 @@ body {
     margin-bottom: 10px;
   }
   #myB > button {
-    /* width: 100%;
-    height: 25px;
-    border-radius: 5px; */
     display: none;
   }
 
   #myD {
     grid-area: a;
-    /* border: 1px solid red; */
   }
   #myD > p {
     margin: auto;
@@ -303,15 +296,12 @@ body {
     margin-bottom: 20px;
     font-family: "Roboto Slab", serif;
     color: #555555;
-    /* margin-left: 200px; */
+
     font-weight: 600;
     display: block;
   }
   #myE {
     grid-area: b;
-    /* line-height: 0px; */
-    /* border: 1px solid red; */
-    /* margin-bottom: 20px; */
   }
   #bankImages {
     margin: auto;
@@ -446,8 +436,8 @@ body {
   align-items: center;
 }
 
-.card:hover{
-  border: 1px solid black
+.card:hover {
+  border: 1px solid black;
 }
 
 span {
