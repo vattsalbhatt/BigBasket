@@ -27,7 +27,11 @@ We can sign in login,signup,add products to cart,buy prducts
 # Team Members
 
 * Samruddhi Bhadale
-* Ayaz Ahemed
+* Vatsal Bhatt
+* Pranjal Khobragade
+* Prathamesh 
+* Somi kumari 
+* Darshan 
 
 # Tech Stack Used
 
